@@ -1,33 +1,659 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="ru">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Boardriders — Сноуборды, Лыжи, Скейт, Серф</title>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
+  <meta name="description" content="Boardriders — официальный интернет-магазин сноубордов, лыж, скейтов и аксессуаров">
   <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
-  <script src="js/app.js"></script>
+<!-- ===== HEADER ===== -->
+<header class="site-header">
 
+  <!-- Top Info Bar -->
+  <div class="info-bar">
+    <div class="container">
+      <div class="info-bar__left">
+        <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M7 9.5C6.33696 9.5 5.70107 9.23661 5.23223 8.76777C4.76339 8.29893 4.5 7.66304 4.5 7C4.5 6.33696 4.76339 5.70107 5.23223 5.23223C5.70107 4.76339 6.33696 4.5 7 4.5C7.66304 4.5 8.29893 4.76339 8.76777 5.23223C9.23661 5.70107 9.5 6.33696 9.5 7C9.5 7.3283 9.43534 7.65339 9.3097 7.95671C9.18406 8.26002 8.99991 8.53562 8.76777 8.76777C8.53562 8.99991 8.26002 9.18406 7.95671 9.3097C7.65339 9.43534 7.3283 9.5 7 9.5ZM7 0C5.14348 0 3.36301 0.737498 2.05025 2.05025C0.737498 3.36301 0 5.14348 0 7C0 12.25 7 20 7 20C7 20 14 12.25 14 7C14 5.14348 13.2625 3.36301 11.9497 2.05025C10.637 0.737498 8.85652 0 7 0Z" fill="#F2F2F2"/>
+        </svg>
+        <span class="info-bar__text">Ваш регион доставки: &nbsp;<strong>Москва</strong></span>
+        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M1.175 0L5 3.71159L8.825 0L10 1.14825L5 6L0 1.14825L1.175 0Z" fill="#F2F2F2"/>
+        </svg>
+      </div>
+      <div class="info-bar__center">
+        <a href="#" class="info-bar__text info-bar__link">Магазины</a>
+        <a href="#" class="info-bar__text info-bar__link">Помощь</a>
+        <a href="#" class="info-bar__text info-bar__link">Блоги</a>
+      </div>
+      <div class="info-bar__right">
+        <div class="info-bar__item">
+          <svg width="20" height="18" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M11.5 13.8889H2V7.93651H12.3C13.3 6.74603 14.8 5.95238 16.5 5.95238C17.8 5.95238 19 6.44841 20 7.24206V1.98413C20 1.4579 19.7893 0.953233 19.4142 0.581137C19.0391 0.209041 18.5304 0 18 0H2C1.46957 0 0.960859 0.209041 0.585786 0.581137C0.210714 0.953233 0 1.4579 0 1.98413V13.8889C0 14.4151 0.210714 14.9198 0.585786 15.2919C0.960859 15.664 1.46957 15.873 2 15.873H12.6C12.2 15.2778 11.8 14.5833 11.5 13.8889ZM2 1.98413H18V3.96825H2V1.98413ZM16.5 7.93651C14.6 7.93651 13 9.52381 13 11.4087C13 13.9881 16.5 17.8571 16.5 17.8571C16.5 17.8571 20 13.9881 20 11.4087C20 9.52381 18.4 7.93651 16.5 7.93651ZM16.5 12.6984C15.8 12.6984 15.3 12.1032 15.3 11.5079C15.3 10.8135 15.9 10.3175 16.5 10.3175C17.1 10.3175 17.7 10.9127 17.7 11.5079C17.8 12.1032 17.2 12.6984 16.5 12.6984Z" fill="#BDBDBD"/>
+          </svg>
+          <span class="info-bar__text">Бесплатная доставка *</span>
+        </div>
+        <div class="info-bar__item">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M14.4444 14H10V17L4.44444 12L10 7V10H14.4444V14ZM10 2C10.2947 2 10.5773 2.10536 10.7857 2.29289C10.994 2.48043 11.1111 2.73478 11.1111 3C11.1111 3.26522 10.994 3.51957 10.7857 3.70711C10.5773 3.89464 10.2947 4 10 4C9.70532 4 9.4227 3.89464 9.21433 3.70711C9.00595 3.51957 8.88889 3.26522 8.88889 3C8.88889 2.73478 9.00595 2.48043 9.21433 2.29289C9.4227 2.10536 9.70532 2 10 2ZM17.7778 2H13.1333C12.6667 0.84 11.4444 0 10 0C8.55556 0 7.33333 0.84 6.86667 2H2.22222C1.63285 2 1.06762 2.21071 0.650874 2.58579C0.234126 2.96086 0 3.46957 0 4V18C0 18.5304 0.234126 19.0391 0.650874 19.4142C1.06762 19.7893 1.63285 20 2.22222 20H17.7778C18.3671 20 18.9324 19.7893 19.3491 19.4142C19.7659 19.0391 20 18.5304 20 18V4C20 3.46957 19.7659 2.96086 19.3491 2.58579C18.9324 2.21071 18.3671 2 17.7778 2Z" fill="#BDBDBD"/>
+          </svg>
+          <span class="info-bar__text">Оплата при получении</span>
+        </div>
+        <div class="info-bar__item">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M14.4444 14H10V17L4.44444 12L10 7V10H14.4444V14ZM10 2C10.2947 2 10.5773 2.10536 10.7857 2.29289C10.994 2.48043 11.1111 2.73478 11.1111 3C11.1111 3.26522 10.994 3.51957 10.7857 3.70711C10.5773 3.89464 10.2947 4 10 4C9.70532 4 9.4227 3.89464 9.21433 3.70711C9.00595 3.51957 8.88889 3.26522 8.88889 3C8.88889 2.73478 9.00595 2.48043 9.21433 2.29289C9.4227 2.10536 9.70532 2 10 2ZM17.7778 2H13.1333C12.6667 0.84 11.4444 0 10 0C8.55556 0 7.33333 0.84 6.86667 2H2.22222C1.63285 2 1.06762 2.21071 0.650874 2.58579C0.234126 2.96086 0 3.46957 0 4V18C0 18.5304 0.234126 19.0391 0.650874 19.4142C1.06762 19.7893 1.63285 20 2.22222 20H17.7778C18.3671 20 18.9324 19.7893 19.3491 19.4142C19.7659 19.0391 20 18.5304 20 18V4C20 3.46957 19.7659 2.96086 19.3491 2.58579C18.9324 2.21071 18.3671 2 17.7778 2Z" fill="#BDBDBD"/>
+          </svg>
+          <span class="info-bar__text">Возврат в течение 14 дней</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <div class="main-header">
+    <div class="container">
+      <div class="gender-tabs">
+        <a href="#" class="gender-tab gender-tab--active">Мужчинам</a>
+        <a href="#" class="gender-tab">Женщинам</a>
+        <a href="#" class="gender-tab">Детям</a>
+      </div>
+      <a href="#" class="brand-logo">
+        <img src="./img/image%201.png" alt="Boardriders" />
+      </a>
+      <div class="header-actions">
+        <a href="#" class="header-action">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C13.5913 0 15.1174 0.632141 16.2426 1.75736C17.3679 2.88258 18 4.4087 18 6C18 7.5913 17.3679 9.11742 16.2426 10.2426C15.1174 11.3679 13.5913 12 12 12C10.4087 12 8.88258 11.3679 7.75736 10.2426C6.63214 9.11742 6 7.5913 6 6C6 4.4087 6.63214 2.88258 7.75736 1.75736C8.88258 0.632141 10.4087 0 12 0ZM12 15C18.63 15 24 17.685 24 21V24H0V21C0 17.685 5.37 15 12 15Z" fill="black"/>
+          </svg>
+          <span class="header-action__label">Войти</span>
+        </a>
+        <a href="#" class="header-action">
+          <svg width="24" height="23" viewBox="0 0 24 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M14.9121 8.13965L15.0293 8.41602L15.3291 8.44238L22.7783 9.08398L17.1211 13.9863L16.8926 14.1836L16.9609 14.4775L18.6592 21.7588L12.2588 17.8955L12 17.7402L11.7412 17.8955L5.33789 21.7598L7.02734 14.4766L7.09473 14.1836L6.86816 13.9863L1.21973 9.08496L8.6709 8.44238L8.9707 8.41602L9.08789 8.13965L12 1.27832L14.9121 8.13965Z" fill="#333333" stroke="black"/>
+          </svg>
+          <span class="header-action__label">Избранное</span>
+        </a>
+        <a href="#" class="header-action">
+          <svg width="43" height="21" viewBox="0 0 43 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M32.7989 4.79978H16.5541L14.6918 0.703167C14.5964 0.493535 14.4428 0.315766 14.2492 0.191081C14.0555 0.0663969 13.8301 6.37684e-05 13.5998 0H10V2.39989H12.8271L18.5076 14.8961C18.6029 15.1057 18.7566 15.2835 18.9502 15.4082C19.1438 15.5329 19.3693 15.5992 19.5996 15.5993H29.1991C29.6791 15.5993 30.1135 15.3137 30.3019 14.8721L33.9017 6.4725C33.9806 6.29003 34.0128 6.0908 33.9954 5.89277C33.9781 5.69474 33.9117 5.50414 33.8023 5.33818C33.6929 5.17221 33.5439 5.03609 33.3687 4.9421C33.1935 4.8481 32.9977 4.79919 32.7989 4.79978Z" fill="black"/>
+            <path d="M20.1996 20.399C21.1936 20.399 21.9995 19.5932 21.9995 18.5991C21.9995 17.6051 21.1936 16.7992 20.1996 16.7992C19.2055 16.7992 18.3997 17.6051 18.3997 18.5991C18.3997 19.5932 19.2055 20.399 20.1996 20.399Z" fill="black"/>
+            <path d="M28.5991 20.399C29.5932 20.399 30.399 19.5932 30.399 18.5991C30.399 17.6051 29.5932 16.7992 28.5991 16.7992C27.605 16.7992 26.7992 17.6051 26.7992 18.5991C26.7992 19.5932 27.605 20.399 28.5991 20.399Z" fill="black"/>
+          </svg>
+          <span class="header-action__label">Корзина</span>
+        </a>
+        <a href="#" class="header-action">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.91429 0C11.2785 0 13.5459 0.939181 15.2176 2.61093C16.8894 4.28269 17.8286 6.55007 17.8286 8.91429C17.8286 11.1223 17.0194 13.152 15.6891 14.7154L16.0594 15.0857H17.1429L24 21.9429L21.9429 24L15.0857 17.1429V16.0594L14.7154 15.6891C13.0979 17.0699 11.041 17.8284 8.91429 17.8286C6.55007 17.8286 4.28269 16.8894 2.61093 15.2176C0.939181 13.5459 0 11.2785 0 8.91429C0 6.55007 0.939181 4.28269 2.61093 2.61093C4.28269 0.939181 6.55007 0 8.91429 0ZM8.91429 2.74286C5.48571 2.74286 2.74286 5.48571 2.74286 8.91429C2.74286 12.3429 5.48571 15.0857 8.91429 15.0857C12.3429 15.0857 15.0857 12.3429 15.0857 8.91429C15.0857 5.48571 12.3429 2.74286 8.91429 2.74286Z" fill="black"/>
+          </svg>
+          <span class="header-action__label">Поиск</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Category Navigation -->
+  <nav class="category-nav" aria-label="Категории">
+    <div class="container">
+      <ul class="category-list">
+        <li><a href="#">Новинки</a></li>
+        <li><a href="#">Сноуборд</a></li>
+        <li><a href="#">Лыжи</a></li>
+        <li><a href="#">Скейт</a></li>
+        <li><a href="#">Лонгборд</a></li>
+        <li><a href="#">Вейкборд</a></li>
+        <li><a href="#">Серф</a></li>
+        <li><a href="#">Sup</a></li>
+        <li><a href="#">Одежда</a></li>
+        <li><a href="#">Обувь</a></li>
+        <li><a href="#">Аксессуары</a></li>
+        <li><a href="#">Бренды</a></li>
+        <li><a href="#" class="sale-link">Распродажа</a></li>
+      </ul>
+    </div>
+  </nav>
+
+</header>
+
+<main>
+
+  <!-- ===== HERO SLIDER ===== -->
+  <section class="hero-slider" aria-label="Главный баннер">
+    <div class="container">
+      <div class="hero-slide">
+        <img src="./img/back_img1.png" alt="Winter Sale до -70%" />
+        <div class="hero-badge">
+          <span class="hero-badge__text">WINTER SALE ДО -70%</span>
+        </div>
+      </div>
+      <button class="slider-btn slider-btn--prev" aria-label="Предыдущий слайд">
+        <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10.2857 21.7261L-2.38419e-07 10.8631L10.2857 0" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button class="slider-btn slider-btn--next" aria-label="Следующий слайд">
+        <svg width="11" height="22" viewBox="0 0 11 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 21.7261L10.2858 10.8631L0 0" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- ===== BRANDS STRIP ===== -->
+  <section class="brands-strip" aria-label="Наши бренды">
+    <div class="container">
+      <div class="brands-grid">
+        <img src="./img/image%2013.png" alt="Бренд" />
+        <img src="./img/image%2018.png" alt="Бренд" />
+        <img src="./img/image%2014.png" alt="Бренд" />
+        <img src="./img/image%2015.png" alt="Бренд" />
+        <img src="./img/image%2016.png" alt="Бренд" />
+        <img src="./img/image%2017.png" alt="Бренд" />
+        <img src="./img/image%2019.png" alt="Бренд" />
+        <img src="./img/image%2020.png" alt="Бренд" />
+        <img src="./img/image%2021.png" alt="Бренд" />
+        <img src="./img/image%2022.png" alt="Бренд" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROMO BANNERS ===== -->
+  <section class="promo-banners">
+    <div class="container">
+      <div class="promo-grid">
+        <div class="promo-card">
+          <img src="./img/back_img2.png" alt="Название акции №1" />
+          <div class="promo-card__label">Название акции №1</div>
+        </div>
+        <div class="promo-card">
+          <img src="./img/strange1.png" alt="Название акции №2" />
+          <div class="promo-card__label">Название акции №2</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== НОВИНКИ SECTION ===== -->
+  <section class="products-section">
+    <div class="container">
+      <h2 class="section-title">Новинки</h2>
+      <div class="products-slider-wrapper">
+        <button class="products-nav-btn products-nav-btn--prev" aria-label="Назад">
+          <svg width="14" height="29" viewBox="0 0 14 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.7143 28.9683L4.76837e-07 14.4841L13.7143 0" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="products-grid">
+
+          <!-- Card 1 — Active favourite -->
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="./img/image%209.png" alt="Мужской Сноуборд LIB TECH" />
+              <button class="product-card__fav product-card__fav--active" aria-label="Убрать из избранного">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="20" fill="black"/>
+                  <path d="M20 25.0737L26.18 29L24.54 21.6L30 16.6211L22.81 15.9684L20 9L17.19 15.9684L10 16.6211L15.45 21.6L13.82 29L20 25.0737Z" fill="#F2F2F2"/>
+                </svg>
+              </button>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__brand">LIB TECH</p>
+              <p class="product-card__category">Мужской Сноуборд</p>
+              <div class="product-card__pricing">
+                <span class="product-card__price">34&nbsp;392 ₽</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 — Sale -->
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="./img/image_9_2.png" alt="Мужской Сноуборд LIB TECH" />
+              <span class="product-card__sale-badge">-50%</span>
+              <button class="product-card__fav" aria-label="Добавить в избранное">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F2F2F2"/>
+                  <path d="M22.3467 16.1553L22.4609 16.4385L22.7646 16.4668L28.8242 17.0156L24.2031 21.2305L23.9893 21.4258L24.0518 21.708L25.4297 27.9307L20.2686 24.6514L20 24.4814L19.7314 24.6514L14.5664 27.9326L15.9385 21.708L16 21.4258L15.7871 21.2305L11.1738 17.0166L17.2354 16.4668L17.5391 16.4385L17.6533 16.1553L20 10.3359L22.3467 16.1553Z" stroke="black"/>
+                </svg>
+              </button>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__brand">LIB TECH</p>
+              <p class="product-card__category">Мужской Сноуборд</p>
+              <div class="product-card__pricing">
+                <span class="product-card__price product-card__price--original">34&nbsp;095 ₽</span>
+                <span class="product-card__price product-card__price--sale">17&nbsp;392 ₽</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="./img/image_9_3.png" alt="Мужской Сноуборд LIB TECH" />
+              <button class="product-card__fav" aria-label="Добавить в избранное">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F2F2F2"/>
+                  <path d="M22.3467 16.1553L22.4609 16.4385L22.7646 16.4668L28.8242 17.0156L24.2031 21.2305L23.9893 21.4258L24.0518 21.708L25.4297 27.9307L20.2686 24.6514L20 24.4814L19.7314 24.6514L14.5664 27.9326L15.9385 21.708L16 21.4258L15.7871 21.2305L11.1738 17.0166L17.2354 16.4668L17.5391 16.4385L17.6533 16.1553L20 10.3359L22.3467 16.1553Z" stroke="black"/>
+                </svg>
+              </button>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__brand">LIB TECH</p>
+              <p class="product-card__category">Мужской Сноуборд</p>
+              <div class="product-card__pricing">
+                <span class="product-card__price">34&nbsp;392 ₽</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 — Skis -->
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="./img/image_9_4.png" alt="Карвинговые Лыжи LIB TECH" />
+              <button class="product-card__fav" aria-label="Добавить в избранное">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F2F2F2"/>
+                  <path d="M22.3467 16.1553L22.4609 16.4385L22.7646 16.4668L28.8242 17.0156L24.2031 21.2305L23.9893 21.4258L24.0518 21.708L25.4297 27.9307L20.2686 24.6514L20 24.4814L19.7314 24.6514L14.5664 27.9326L15.9385 21.708L16 21.4258L15.7871 21.2305L11.1738 17.0166L17.2354 16.4668L17.5391 16.4385L17.6533 16.1553L20 10.3359L22.3467 16.1553Z" stroke="black"/>
+                </svg>
+              </button>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__brand">LIB TECH</p>
+              <p class="product-card__category">Карвинговые Лыжи</p>
+              <div class="product-card__pricing">
+                <span class="product-card__price">34&nbsp;360 ₽</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <button class="products-nav-btn products-nav-btn--next" aria-label="Вперёд">
+          <svg width="14" height="29" viewBox="0 0 14 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 28.9683L13.7142 14.4841L0 0" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="show-more-wrap">
+        <a href="#" class="btn-show-more">Показать больше</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DC BRAND FEATURE ===== -->
+  <section class="brand-feature">
+    <div class="container">
+      <div class="brand-feature__logo-wrap">
+        <img src="https://api.builder.io/api/v1/image/assets/TEMP/a0aec7389b59c267fe9e6cb147a75e605ac97963?width=160" alt="DC" class="brand-feature__logo" />
+      </div>
+      <img src="./img/back_img2.png" alt="DC Shoes" class="brand-feature__banner" />
+    </div>
+    <div class="brand-feature__content">
+      <div class="container">
+        <h3 class="brand-feature__promo-title">Название Акции</h3>
+        <p class="brand-feature__description">
+          Меня не спрашивали, а надо было спросить, что означает имя Заратустры именно в моих устах — в устах первого имморалиста: ведь то, в чём состоит неслыханная уникальность этого перса в истории, являет собою противоположность как раз этому.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DC SHOES COLLECTION ===== -->
+  <section class="products-section">
+    <div class="container">
+      <h2 class="section-title">DC Shoes популярное в коллекции</h2>
+      <div class="products-slider-wrapper">
+        <button class="products-nav-btn products-nav-btn--prev" aria-label="Назад">
+          <svg width="14" height="29" viewBox="0 0 14 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.7143 28.9683L4.76837e-07 14.4841L13.7143 0" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="products-grid">
+
+          <!-- DC Card 1 — Sale shoe -->
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="./img/image_9_2.png" alt="Мужской Сноуборд LIB TECH" />
+              <span class="product-card__sale-badge">-50%</span>
+              <button class="product-card__fav" aria-label="Добавить в избранное">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F2F2F2"/>
+                  <path d="M22.3467 16.1553L22.4609 16.4385L22.7646 16.4668L28.8242 17.0156L24.2031 21.2305L23.9893 21.4258L24.0518 21.708L25.4297 27.9307L20.2686 24.6514L20 24.4814L19.7314 24.6514L14.5664 27.9326L15.9385 21.708L16 21.4258L15.7871 21.2305L11.1738 17.0166L17.2354 16.4668L17.5391 16.4385L17.6533 16.1553L20 10.3359L22.3467 16.1553Z" stroke="black"/>
+                </svg>
+              </button>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__brand">LIB TECH</p>
+              <p class="product-card__category">Мужской Сноуборд</p>
+              <div class="product-card__pricing">
+                <span class="product-card__price product-card__price--original">34&nbsp;095 ₽</span>
+                <span class="product-card__price product-card__price--sale">17&nbsp;392 ₽</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- DC Card 2 — Sale board -->
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="./img/image_9_5.png" alt="Мужской Сноуборд LIB TECH" />
+              <span class="product-card__sale-badge">-50%</span>
+              <button class="product-card__fav" aria-label="Добавить в избранное">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F2F2F2"/>
+                  <path d="M22.3467 16.1553L22.4609 16.4385L22.7646 16.4668L28.8242 17.0156L24.2031 21.2305L23.9893 21.4258L24.0518 21.708L25.4297 27.9307L20.2686 24.6514L20 24.4814L19.7314 24.6514L14.5664 27.9326L15.9385 21.708L16 21.4258L15.7871 21.2305L11.1738 17.0166L17.2354 16.4668L17.5391 16.4385L17.6533 16.1553L20 10.3359L22.3467 16.1553Z" stroke="black"/>
+                </svg>
+              </button>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__brand">LIB TECH</p>
+              <p class="product-card__category">Мужской Сноуборд</p>
+              <div class="product-card__pricing">
+                <span class="product-card__price product-card__price--original">34&nbsp;095 ₽</span>
+                <span class="product-card__price product-card__price--sale">17&nbsp;392 ₽</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- DC Card 3 -->
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="./img/image_9_3.png" alt="Мужской Сноуборд LIB TECH" />
+              <button class="product-card__fav" aria-label="Добавить в избранное">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F2F2F2"/>
+                  <path d="M22.3467 16.1553L22.4609 16.4385L22.7646 16.4668L28.8242 17.0156L24.2031 21.2305L23.9893 21.4258L24.0518 21.708L25.4297 27.9307L20.2686 24.6514L20 24.4814L19.7314 24.6514L14.5664 27.9326L15.9385 21.708L16 21.4258L15.7871 21.2305L11.1738 17.0166L17.2354 16.4668L17.5391 16.4385L17.6533 16.1553L20 10.3359L22.3467 16.1553Z" stroke="black"/>
+                </svg>
+              </button>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__brand">LIB TECH</p>
+              <p class="product-card__category">Мужской Сноуборд</p>
+              <div class="product-card__pricing">
+                <span class="product-card__price">34&nbsp;392 ₽</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- DC Card 4 — Skis -->
+          <article class="product-card">
+            <div class="product-card__image-wrap">
+              <img src="./img/image_9_4.png" alt="Карвинговые Лыжи LIB TECH" />
+              <button class="product-card__fav" aria-label="Добавить в избранное">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="20" cy="20" r="19.5" fill="white" stroke="#F2F2F2"/>
+                  <path d="M22.3467 16.1553L22.4609 16.4385L22.7646 16.4668L28.8242 17.0156L24.2031 21.2305L23.9893 21.4258L24.0518 21.708L25.4297 27.9307L20.2686 24.6514L20 24.4814L19.7314 24.6514L14.5664 27.9326L15.9385 21.708L16 21.4258L15.7871 21.2305L11.1738 17.0166L17.2354 16.4668L17.5391 16.4385L17.6533 16.1553L20 10.3359L22.3467 16.1553Z" stroke="black"/>
+                </svg>
+              </button>
+            </div>
+            <div class="product-card__info">
+              <p class="product-card__brand">LIB TECH</p>
+              <p class="product-card__category">Карвинговые Лыжи</p>
+              <div class="product-card__pricing">
+                <span class="product-card__price">34&nbsp;392 ₽</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <button class="products-nav-btn products-nav-btn--next" aria-label="Вперёд">
+          <svg width="14" height="29" viewBox="0 0 14 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 28.9683L13.7142 14.4841L0 0" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+      <div class="show-more-wrap">
+        <a href="#" class="btn-show-more">Показать больше</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG SECTION ===== -->
+  <section class="blog-section">
+    <div class="blog-section__inner">
+      <div class="blog-section__media">
+        <img src="./img/Rectangle%2067.png" alt="Блог" />
+        <button class="blog-section__play" aria-label="Воспроизвести">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#blog-shadow)">
+              <circle cx="40" cy="40" r="40" fill="white" fill-opacity="0.9"/>
+            </g>
+            <path d="M34 30.4058L54.9032 41.2689L34 52.1321V30.4058Z" fill="black"/>
+            <defs>
+              <filter id="blog-shadow" x="-8" y="0" width="88" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dx="-4" dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+              </filter>
+            </defs>
+          </svg>
+        </button>
+      </div>
+
+      <div class="blog-section__content">
+        <div class="blog-section__header">
+          <span class="blog-section__tag">Блоги</span>
+          <a href="#" class="blog-section__all-link">Все блоги</a>
+        </div>
+        <h2 class="blog-section__title">Очень преочень длинное название блога</h2>
+        <p class="blog-section__text">
+          Меня не спрашивали, а надо было спросить, что означает имя Заратустры именно в моих устах — в устах первого имморалиста: ведь то, в чём состоит неслыханная уникальность этого перса в истории, являет собою противоположность как раз этому.
+        </p>
+        <p class="blog-section__text">
+          Меня не спрашивали, а надо было спросить, что означает имя Заратустры именно в моих устах — в устах первого имморалиста: ведь то, в чём состоит неслыханная уникальность этого перса в истории, являет собою противоположность как раз этому...
+        </p>
+        <a href="#" class="blog-section__read-more">
+          Читать продолжение
+          <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6.26442V8.07494H12L6.49999 13.0539L7.91998 14.3394L15.84 7.16968L7.91998 0L6.49999 1.28547L12 6.26442H0Z" fill="white"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA BLOCKS ===== -->
+  <section class="cta-blocks">
+
+    <!-- Loyalty Program -->
+    <div class="cta-block cta-block--loyalty">
+      <img src="./img/image_6.png" alt="Программа лояльности" class="cta-block__bg" />
+      <div class="cta-block__content">
+        <img src="./img/image%2023.png" alt="Boardriders logo" class="cta-block__badge-img" />
+        <h3 class="cta-block__title">Программа лояльности</h3>
+        <p class="cta-block__subtitle">Зарабатывайте баллы и получайте преимущества</p>
+        <a href="#" class="btn-join">Вступить в клуб</a>
+      </div>
+    </div>
+
+    <!-- Newsletter -->
+    <div class="cta-block cta-block--newsletter">
+      <img src="./img/strange1.png" alt="Подписка" class="cta-block__bg" />
+      <div class="cta-block__content">
+        <svg class="cta-block__envelope" width="71" height="57" viewBox="0 0 71 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M63.9 14.25L35.5 32.0625L7.1 14.25V7.125L35.5 24.9375L63.9 7.125V14.25ZM63.9 0H7.1C3.1595 0 0 3.17062 0 7.125V49.875C0 51.7647 0.748033 53.5769 2.07954 54.9131C3.41105 56.2493 5.21696 57 7.1 57H63.9C65.783 57 67.589 56.2493 68.9205 54.9131C70.252 53.5769 71 51.7647 71 49.875V7.125C71 5.23533 70.252 3.42306 68.9205 2.08686C67.589 0.750667 65.783 0 63.9 0Z" fill="#F9F9F9"/>
+        </svg>
+        <h3 class="cta-block__title">Скидка -10%</h3>
+        <p class="cta-block__subtitle">За подписку на наши новости</p>
+        <form class="email-form" action="#">
+          <svg class="email-form__icon" width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18 4L10 9L2 4V2L10 7L18 2V4ZM18 0H2C0.89 0 0 0.89 0 2V14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H18C18.5304 16 19.0391 15.7893 19.4142 15.4142C19.7893 15.0391 20 14.5304 20 14V2C20 1.46957 19.7893 0.960859 19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0Z" fill="black"/>
+          </svg>
+          <input type="email" class="email-form__input" placeholder="Email" aria-label="Введите email" />
+          <button type="submit" class="email-form__submit" aria-label="Отправить">
+            <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 19V11.6276L15.7143 9.5L0 7.3724V0L22 9.5L0 19Z" fill="black"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <svg class="footer-wave" viewBox="0 0 1696 807" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 38L431.322 107.032C439.395 108.324 447.661 107.617 455.396 104.973L744.959 5.99441C756.452 2.06581 768.77 1.19533 780.701 3.46851L1285.29 99.6033C1290.15 100.529 1295.12 100.729 1300.04 100.195L1688.96 58L1696 785H0V38Z" fill="black"/>
+    <path d="M0 45L431.322 114.032C439.395 115.324 447.661 114.617 455.396 111.973L744.959 12.9944C756.452 9.06581 768.77 8.19533 780.701 10.4685L1285.29 106.603C1290.15 107.529 1295.12 107.729 1300.04 107.195L1688.96 65L1696 792H0V45Z" fill="white"/>
+    <path d="M0 60L429.442 129.016C437.546 130.319 445.845 129.606 453.608 126.942L741.748 28.0413C753.281 24.0825 765.649 23.2053 777.626 25.4967L1279.93 121.592C1284.81 122.525 1289.8 122.726 1294.74 122.188L1681.99 80L1689 807H0V60Z" fill="black"/>
+  </svg>
+
+  <div class="footer-inner">
+    <div class="container">
+
+      <div class="footer-top">
+
+        <!-- App / Logo Column -->
+        <div class="footer-col footer-col--app">
+          <img src="./img/image%2027.png" alt="Boardriders" class="footer-logo" />
+          <p class="footer-app-tagline">Доступ к ранним релизам в приложении</p>
+          <div class="footer-app-buttons">
+            <a href="#" class="footer-app-btn">
+              <img src="./img/strange3.png" alt="" class="footer-app-btn__icon" />
+              <div class="footer-app-btn__text">
+                <img src="./img/Download%20on%20the.png" alt="Download on the" />
+                <img src="./img/App%20Store.png" alt="App Store" />
+              </div>
+            </a>
+            <a href="#" class="footer-app-btn">
+              <img src="./img/Group%201030.png" alt="" class="footer-app-btn__icon" />
+              <div class="footer-app-btn__text">
+                <img src="./img/Google%20Play.png" alt="Get it on Google Play" />
+              </div>
+            </a>
+          </div>
+          <img src="./img/QR%20Code.png" alt="QR-код для скачивания приложения" class="footer-qr" />
+        </div>
+
+        <!-- Contacts Column -->
+        <div class="footer-col footer-col--contacts">
+          <h3 class="footer-col__heading">Контакты</h3>
+          <div class="footer-contact-item">
+            <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4.62556 9.95389C6.46556 13.57 9.43 16.5344 13.0461 18.3744L15.8572 15.5633C16.215 15.2056 16.7133 15.1033 17.1606 15.2439C18.5917 15.7167 20.125 15.9722 21.7222 15.9722C22.0611 15.9722 22.3861 16.1068 22.6257 16.3465C22.8654 16.5861 23 16.9111 23 17.25V21.7222C23 22.0611 22.8654 22.3861 22.6257 22.6257C22.3861 22.8654 22.0611 23 21.7222 23C15.9611 23 10.436 20.7114 6.36229 16.6377C2.28858 12.564 0 7.03887 0 1.27778C0 0.93889 0.134623 0.613882 0.374252 0.374252C0.613882 0.134623 0.93889 0 1.27778 0H5.75C6.08889 0 6.4139 0.134623 6.65353 0.374252C6.89316 0.613882 7.02778 0.93889 7.02778 1.27778C7.02778 2.875 7.28333 4.40833 7.75611 5.83944C7.89667 6.28667 7.79444 6.785 7.43667 7.14278L4.62556 9.95389Z" fill="white"/>
+            </svg>
+            <div>
+              <p class="footer-contact-item__title">8 (800) 511-74-68</p>
+              <p class="footer-contact-item__sub">Бесплатная горячая линия<br>Ежедневно с 9 до 21</p>
+            </div>
+          </div>
+          <div class="footer-contact-item">
+            <svg width="25" height="20" viewBox="0 0 25 20" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M22.5 5L12.5 11.25L2.5 5V2.5L12.5 8.75L22.5 2.5V5ZM22.5 0H2.5C1.1125 0 0 1.1125 0 2.5V17.5C0 18.163 0.263392 18.7989 0.732233 19.2678C1.20107 19.7366 1.83696 20 2.5 20H22.5C23.163 20 23.7989 19.7366 24.2678 19.2678C24.7366 18.7989 25 18.163 25 17.5V2.5C25 1.83696 24.7366 1.20107 24.2678 0.732233C23.7989 0.263392 23.163 0 22.5 0Z" fill="white"/>
+            </svg>
+            <div>
+              <p class="footer-contact-item__title">Контактный Email</p>
+              <p class="footer-contact-item__sub">info@brd.ru</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Help Column -->
+        <div class="footer-col footer-col--links">
+          <h3 class="footer-col__heading">Помощь</h3>
+          <a href="#" class="footer-col__link">Доставка</a>
+          <a href="#" class="footer-col__link">Оплата</a>
+          <a href="#" class="footer-col__link">Возврат</a>
+          <a href="#" class="footer-col__link">Отзывы (2290)</a>
+          <a href="#" class="footer-col__link">Акции и скидки</a>
+        </div>
+
+        <!-- Company Column -->
+        <div class="footer-col footer-col--links">
+          <h3 class="footer-col__heading">Компания</h3>
+          <a href="#" class="footer-col__link">Контакты</a>
+          <a href="#" class="footer-col__link">О boardriders</a>
+          <a href="#" class="footer-col__link">Вакансии</a>
+          <a href="#" class="footer-col__link">Публичная оферта</a>
+        </div>
+
+        <!-- Boardriders Inc Column -->
+        <div class="footer-col footer-col--links">
+          <h3 class="footer-col__heading">Boardriders Inc.</h3>
+          <a href="#" class="footer-col__link">Quiksilver</a>
+          <a href="#" class="footer-col__link">Roxy</a>
+          <a href="#" class="footer-col__link">DC Shoes</a>
+          <a href="#" class="footer-col__link">Billabong</a>
+          <a href="#" class="footer-col__link">RVCA</a>
+        </div>
+
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <!-- Subscribe row -->
+      <div class="footer-subscribe">
+        <div class="footer-subscribe__text">
+          <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M18 4L10 9L2 4V2L10 7L18 2V4ZM18 0H2C0.89 0 0 0.89 0 2V14C0 14.5304 0.210714 15.0391 0.585786 15.4142C0.960859 15.7893 1.46957 16 2 16H18C18.5304 16 19.0391 15.7893 19.4142 15.4142C19.7893 15.0391 20 14.5304 20 14V2C20 1.46957 19.7893 0.960859 19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0Z" fill="#828B8D"/>
+          </svg>
+          <span class="footer-subscribe__label">Подпишись на рассылку и получи <span class="footer-subscribe__highlight">-10%</span> скидку</span>
+        </div>
+        <form class="footer-subscribe__form" action="#">
+          <input type="email" class="footer-subscribe__input" placeholder="Email" aria-label="Email для подписки" />
+          <button type="submit" class="footer-subscribe__btn" aria-label="Подписаться">
+            <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 19V11.6276L15.7143 9.5L0 7.3724V0L22 9.5L0 19Z" fill="white"/>
+            </svg>
+          </button>
+        </form>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <!-- Bottom row -->
+      <div class="footer-bottom">
+        <div class="footer-social">
+          <!-- Twitter -->
+          <a href="#" class="footer-social__link" aria-label="Twitter">
+            <svg width="21" height="19" viewBox="0 0 21 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.1071 3.75007C20.5089 4.62507 19.7857 5.3706 18.9375 5.98668C18.9464 6.11168 18.9509 6.29918 18.9509 6.54918C18.9509 7.70989 18.7813 8.8706 18.442 10.0313C18.1027 11.1831 17.5848 12.2902 16.8884 13.3527C16.2009 14.4152 15.3795 15.3572 14.4241 16.1786C13.4688 16.9911 12.317 17.6429 10.9688 18.134C9.62054 18.6161 8.17857 18.8572 6.64286 18.8572C4.22321 18.8572 2.00893 18.2099 0 16.9152C0.3125 16.951 0.660714 16.9688 1.04464 16.9688C3.05357 16.9688 4.84375 16.3527 6.41518 15.1206C5.47768 15.1027 4.63839 14.817 3.89732 14.2635C3.15625 13.701 2.64732 12.9867 2.37054 12.1206C2.66518 12.1652 2.9375 12.1876 3.1875 12.1876C3.57143 12.1876 3.95089 12.1385 4.32589 12.0402C3.32589 11.8349 2.49554 11.3394 1.83482 10.5536C1.18304 9.759 0.857143 8.83935 0.857143 7.79471V7.74114C1.46429 8.08043 2.11607 8.26346 2.8125 8.29025C2.22321 7.89739 1.75446 7.384 1.40625 6.75007C1.05804 6.11614 0.883929 5.42864 0.883929 4.68757C0.883929 3.90186 1.08036 3.17418 1.47321 2.50453C2.55357 3.83489 3.86607 4.90185 5.41071 5.70543C6.96429 6.50007 8.625 6.94203 10.3929 7.03132C10.3214 6.69203 10.2857 6.36168 10.2857 6.04025C10.2857 4.84382 10.7054 3.82596 11.5446 2.98668C12.3929 2.13846 13.4152 1.71436 14.6116 1.71436C15.8616 1.71436 16.9152 2.16971 17.7723 3.08043C18.7455 2.89293 19.6607 2.54471 20.5179 2.03578C20.1875 3.06257 19.5536 3.85721 18.6161 4.41971C19.4464 4.33043 20.2768 4.10721 21.1071 3.75007Z" fill="white"/>
+            </svg>
+          </a>
+          <!-- Facebook -->
+          <a href="#" class="footer-social__link" aria-label="Facebook">
+            <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.5714 1.13839V19.433C20.5714 19.7455 20.4598 20.0134 20.2366 20.2366C20.0134 20.4598 19.7455 20.5714 19.433 20.5714H14.1964V12.6027H16.8616L17.2634 9.49554H14.1964V7.51339C14.1964 7.01339 14.2991 6.63839 14.5045 6.38839C14.7188 6.13839 15.1295 6.01339 15.7366 6.01339L17.3705 6V3.22768C16.808 3.14732 16.0134 3.10714 14.9866 3.10714C13.7723 3.10714 12.7991 3.46429 12.067 4.17857C11.3438 4.89286 10.9821 5.90179 10.9821 7.20536V9.49554H8.30357V12.6027H10.9821V20.5714H1.13839C0.825892 20.5714 0.558035 20.4598 0.334821 20.2366C0.111607 20.0134 0 19.7455 0 19.433V1.13839C0 0.825892 0.111607 0.558035 0.334821 0.334821C0.558035 0.111607 0.825892 0 1.13839 0H19.433C19.7455 0 20.0134 0.111607 20.2366 0.334821C20.4598 0.558035 20.5714 0.825892 20.5714 1.13839Z" fill="white"/>
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="#" class="footer-social__link" aria-label="Instagram">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.2857 12.5089C10.7313 12.5089 11.1331 12.3839 11.4911 12.1339C11.8491 11.8749 12.1205 11.5401 12.3054 11.1295C12.4911 10.7098 12.5714 10.2679 12.5357 9.80357C12.4911 9.33036 12.3304 8.91071 12.0536 8.54464C11.7857 8.17857 11.4464 7.90179 11.0357 7.71429C10.625 7.52679 10.1964 7.44643 9.75 7.47321C9.30357 7.5 8.89286 7.625 8.51786 7.85714C8.14286 8.08036 7.83929 8.38393 7.60714 8.75893C7.375 9.13393 7.26786 9.54464 7.28571 9.98214C7.30357 10.4196 7.42857 10.8214 7.66071 11.1875C7.89286 11.5536 8.20536 11.8393 8.59821 12.0446C8.99107 12.25 9.41964 12.3393 9.87589 12.3125C10.0179 12.3036 10.1518 12.3036 10.2857 12.2946V12.5089ZM10.2054 0C11.8929 0 13.3036 0.0223217 14.4375 0.0669651C15.5804 0.111607 16.5 0.25 17.1964 0.482143C17.9107 0.723214 18.5089 1.07143 18.9911 1.53571C19.4821 1.99107 19.8482 2.55357 20.0893 3.22321C20.3304 3.89286 20.4732 4.76786 20.5179 5.84821C20.5625 6.9375 20.5848 8.35714 20.5848 10.1071C20.5848 11.8482 20.5625 13.2679 20.5179 14.3571C20.4732 15.4464 20.3304 16.3304 20.0893 17.0089C19.8482 17.6875 19.4821 18.2589 18.9911 18.7232C18.5089 19.1875 17.9107 19.5357 17.1964 19.7679C16.5 19.9911 15.5804 20.1295 14.4375 20.1875C13.3036 20.2455 11.8929 20.2679 10.2054 20.2679C8.50893 20.2679 7.09821 20.2455 5.97321 20.1875C4.84821 20.1295 3.9375 19.9911 3.25 19.7679C2.55357 19.5357 1.96429 19.1875 1.48214 18.7232C1 18.2589 0.633929 17.6875 0.392857 17.0089C0.151786 16.3304 0.00892857 15.4464 -0.0357143 14.3571C-0.0803571 13.2679 -0.102679 11.8482 -0.102679 10.1071C-0.102679 8.35714 -0.0803571 6.9375 -0.0357143 5.84821C0.00892857 4.76786 0.151786 3.89286 0.392857 3.22321C0.633929 2.55357 1 1.99107 1.48214 1.53571C1.96429 1.07143 2.55357 0.723214 3.25 0.482143C3.9375 0.25 4.84821 0.111607 5.97321 0.0669651C7.09821 0.0223217 8.50893 0 10.2054 0ZM10.2054 1.85714C8.54464 1.85714 7.16071 1.87946 6.05357 1.92411C4.95536 1.95982 4.125 2.08482 3.5625 2.29911C2.99107 2.52232 2.53571 2.82589 2.19643 3.21875C1.85714 3.61161 1.62500 4.09375 1.5 4.66518C1.38393 5.22768 1.32143 6.08036 1.30357 7.22321C1.28571 8.35714 1.27679 9.68750 1.27679 11.2143C1.27679 12.7411 1.28571 14.0625 1.30357 15.1875C1.32143 16.3304 1.38393 17.1830 1.5 17.7455C1.625 18.3170 1.85714 18.7902 2.19643 19.1741C2.53571 19.5580 2.99107 19.8616 3.5625 20.0848C4.125 20.2991 4.95536 20.4241 6.05357 20.4598C7.16071 20.4866 8.54464 20.5 10.2054 20.5C11.8661 20.5 13.25 20.4866 14.3571 20.4598C15.4643 20.4241 16.2946 20.2991 16.8571 20.0848C17.4196 19.8616 17.875 19.5580 18.2143 19.1741C18.5536 18.7902 18.7857 18.3170 18.9107 17.7455C19.0268 17.1830 19.0893 16.3304 19.1071 15.1875C19.125 14.0625 19.1339 12.7411 19.1339 11.2143C19.1339 9.68750 19.125 8.35714 19.1071 7.22321C19.0893 6.08036 19.0268 5.22768 18.9107 4.66518C18.7857 4.09375 18.5536 3.61161 18.2143 3.21875C17.875 2.82589 17.4196 2.52232 16.8571 2.29911C16.2946 2.08482 15.4643 1.95982 14.3571 1.92411C13.25 1.87946 11.8661 1.85714 10.2054 1.85714Z" fill="white"/>
+            </svg>
+          </a>
+          <!-- YouTube -->
+          <a href="#" class="footer-social__link" aria-label="YouTube">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9.75604 12.7098L16.2384 9.36161L9.75604 6.00446V12.7098ZM12.2344 1.84814C13.7344 1.84814 15.1808 1.87047 16.5737 1.91511C17.9755 1.95082 19.0022 1.991 19.6531 2.03564L20.6309 2.08922C20.64 2.08922 20.7157 2.09814 20.8586 2.116C21.0015 2.12493 21.1042 2.13832 21.1667 2.15618C21.2292 2.16511 21.3319 2.18296 21.4748 2.20975C21.627 2.23654 21.7566 2.27225 21.8638 2.31689C21.971 2.36154 22.0962 2.41957 22.2391 2.491C22.382 2.56243 22.5204 2.65172 22.6543 2.75886C22.7882 2.85707 22.9176 2.97314 23.0426 3.10707C23.0961 3.16064 23.1629 3.24547 23.2434 3.36154C23.332 3.46868 23.4615 3.72761 23.6309 4.13832C23.8093 4.54904 23.9298 4.99993 23.993 5.491C24.0636 6.06243 24.1176 6.67404 24.1533 7.32582C24.1979 7.96868 24.225 8.47314 24.2339 8.83922V9.37493V11.1964C24.2429 12.491 24.1622 13.7856 23.993 15.0803C23.9298 15.5714 23.8183 16.0178 23.6577 16.4196C23.4972 16.8124 23.354 17.0848 23.2291 17.2365L23.0426 17.4642C22.9176 17.5981 22.7882 17.7187 22.6543 17.8258C22.5204 17.924 22.382 18.0089 22.2391 18.0803C22.0962 18.1428 21.971 18.1964 21.8638 18.241C21.7566 18.2856 21.627 18.3214 21.4748 18.3481C21.3319 18.3749 21.225 18.3973 21.1533 18.4151C21.0908 18.424 20.9882 18.4374 20.8452 18.4553C20.7112 18.4642 20.64 18.4687 20.6309 18.4687C18.3904 18.6383 15.5915 18.7231 12.2344 18.7231C10.3861 18.7053 8.77869 18.6785 7.41228 18.6428C6.05494 18.5981 5.16228 18.5624 4.73415 18.5356L4.07673 18.4821L3.5951 18.4285C3.27423 18.3839 3.02779 18.3392 2.85852 18.2946C2.69833 18.2499 2.47068 18.1562 2.17549 18.0133C1.88939 17.8705 1.63940 17.6874 1.42496 17.4642C1.37141 17.4106 1.30053 17.3303 1.21146 17.2231C1.13145 17.1071 1.00238 16.8437 0.822937 16.433C0.653432 16.0223 0.537438 15.5714 0.474745 15.0803C0.402977 14.5089 0.345285 13.9017 0.300588 13.2589C0.264852 12.6071 0.242979 12.0981 0.234042 11.7321V11.1964V9.37493C0.225104 8.08029 0.305699 6.78564 0.474745 5.491C0.537438 4.99993 0.649367 4.55797 0.81029 4.16511C0.971213 3.76332 1.11441 3.48654 1.23939 3.33475L1.42496 3.10707C1.54994 2.97314 1.67939 2.85707 1.81332 2.75886C1.94725 2.65172 2.08566 2.56243 2.22853 2.491C2.37140 2.41957 2.49638 2.36154 2.60336 2.31689C2.71034 2.27225 2.83532 2.23654 2.97825 2.20975C3.13030 2.18296 3.23728 2.16511 3.29953 2.15618C3.36178 2.13832 3.46430 2.12493 3.60723 2.116C3.75016 2.09814 3.82491 2.08922 3.83398 2.08922C6.07493 1.9285 8.87466 1.84814 12.2344 1.84814Z" fill="white"/>
+            </svg>
+          </a>
+          <!-- VK -->
+          <a href="#" class="footer-social__link" aria-label="ВКонтакте">
+            <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.25 1.125H17.0625C16.6875 1.125 16.3875 1.3125 16.2375 1.6125C16.2375 1.6125 14.7 4.35 13.425 6.075C13.0125 6.6375 12.6375 6.9 12.3375 6.9C12.15 6.9 11.925 6.75 11.925 6.1125V1.7625C11.925 1.3125 11.7375 1.125 11.3625 1.125H7.3125C7.0125 1.125 6.825 1.3875 6.825 1.6125C6.825 2.025 7.4625 2.1375 7.5375 3.45V6.975C7.5375 7.5375 7.4625 7.6875 7.2 7.6875C6.4875 7.6875 4.8375 4.95 3.6 1.725C3.375 1.3125 3.1125 1.125 2.7375 1.125H0.75C0.3 1.125 0 1.425 0 1.7625C0 2.2125 0.675 5.1 3.225 8.9625C4.9125 11.475 7.275 12.9 9.45 12.9C10.8375 12.9 11.9625 12.6 11.9625 12C11.9625 11.3625 11.7 10.8375 11.7 10.4625C11.7 10.1625 11.9 9.9375 12.2 9.9375C12.4875 9.9375 13.0125 10.1625 14.2125 11.475C15.6375 12.975 15.825 12.9 16.3875 12.9H19.5375C19.9875 12.9 20.2875 12.6375 20.25 12.2625C20.1375 11.475 19.3875 10.35 18.3 9.1125C17.7375 8.4375 16.875 7.7250 16.6125 7.3125C16.275 6.825 16.35 6.5625 16.6125 6.075C16.6125 6.075 19.1625 2.25 19.4625 1.6875C19.725 1.275 19.5375 1.125 19.1625 1.125H20.25Z" fill="white"/>
+            </svg>
+          </a>
+        </div>
+        <p class="footer-copyright">© 2020 Brd.ru. Все права защищены</p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+<script src="js/app.js"></script>
 </body>
 
 </html>
